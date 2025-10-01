@@ -10,6 +10,8 @@ from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
 from homeassistant.util import dt
 from datetime import datetime, timedelta
+
+SCAN_INTERVAL = timedelta(minutes=15)
 from math import sqrt
 
 _LOGGER = logging.getLogger(__name__)
